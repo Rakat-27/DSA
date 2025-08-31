@@ -12,12 +12,22 @@ public class JavaBasics2 {
         int sum=a+b;
         System.out.println("the sum is "+sum);
     }
+
+    public static int factorial(int n){
+        int fact=1;
+        for(int i=1;i<=n;i++){
+            fact=fact*i;
+        }
+        return fact;
+    }
     public static void main(String[] args) {
         
         // print();
         // calcsum(5,6);
-        int result=multiply(7,7 );
-        System.out.println(result);
+        // int result=multiply(7,7 );
+        // System.out.println(result);
+        int factResult=factorial(5);
+        System.out.println(factResult);
     }
     
 }
