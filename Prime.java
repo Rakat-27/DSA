@@ -20,8 +20,17 @@ public class Prime {
         return isPrime;
     }
 
+    public static void primesInRange(int n){
+        for(int i=2;i<=n;i++){
+            if(isPrime(i)){
+                System.out.print(i+" ");
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        System.out.println(isPrime(3));
+        // System.out.println(isPrime(3));
+        primesInRange(100);
     }
     
 }
